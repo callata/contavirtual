@@ -1,0 +1,12 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^cont\.itecaamericano\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cont\.itecaamericano\.com$
+RewriteRule ^/?$ "http\:\/\/www\.itecaamericano\.com\/" [R=302,L]
+RewriteCond %{HTTP_HOST} ^cont\.itecaamericano\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cont\.itecaamericano\.com$
+RewriteRule ^login\/?$ "http\:\/\/www\.itecaamericano\.com\/" [R=302,L]
+RewriteCond %{HTTP_HOST} ^cont\.itecaamericano\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cont\.itecaamericano\.com$
+RewriteRule ^login\/index\.php$ "http\:\/\/www\.itecaamericano\.com\/" [R=302,L]
+
